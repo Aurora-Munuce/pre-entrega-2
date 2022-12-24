@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a {
+    text-decoration: none;
+    color: black;    
+}
+
+/* Fuente-Color css */
+body {font-family:'Manrope', sans-serif;
+background-color: rgb(238, 241, 188);}
+    h1 {color: rgb(95, 16, 95); font-weight: 900; font-style: oblique;
+text-align:center; font-size: 50px;
+}
+
+/* ---HEADER----*/
+
+/* header texto portada */
+.alinear_flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* header secciones arriba */
+header section {display:flex;
+justify-content: space-evenly;}
+
+header {
+    background-color:rgb(207, 188, 159) ;
+}
+
+    h2 {color: rgb(13, 67, 67);}
+
+/* caja de nav */
+.caja1 {
+
+    width: 700px;
+    height: 350px;
+    background-color: rgb(207, 188, 159);
+    border: ridge 4px salmon ;
+    padding: 4px 2px 4px 2px;
+    margin: 20px 30px 20px 30px ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/* ---MAIN Y ASIDE--- */
+
+.index-novedades {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto  ;
+    grid-template-areas: 
+    "novedades logo"
+    "novedades instituciones";
+    gap: 5px;
+}
+    .novedades {
+        grid-area: novedades;
+    }
+
+    .logo {
+        display: flex;
+        grid-area: logo;
+        justify-content: center;
+    }
+    .instituciones {
+    
+        grid-area: instituciones;
+    }
+
+
+
+/* novedades_video YT */
+.alinear_video {
+    display: flex;
+    justify-content: center;
+}
+    nav ul {list-style:none;
+text-align: center;
+}
+    main h2 {text-align: center; 
+        font-size: xx-large;
+    }
+
+
+    section a {text-decoration: none; font-size: 20px;}
+ /* LOGO */
+.alinear_logo {
+    display: flex;
+    justify-content: right;
+}
+
+    aside a {text-decoration: none;}
+
+    /*---GALERIA CURSOS  */
+.galeria ul {
+    list-style-type: none;
+}
+.galeria {
+    padding: 15px 0px;
+
+}
+.galeria h2 {
+    text-align: center;
+    padding: 10px;
+}
+.grilla-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.grilla-galeria img {
+    width: 95%;
+}
+@media (min-width:768px) {
+    .grilla-galeria {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 500px;
+    }
+}
+
+    .color-negro {color:black}
+    .color-verde {color: rgb(8, 49, 8);}
+
+    /* ---FOOTER--- */
+    footer a {text-decoration: none;}
+    footer ul {list-style:none;
+        font-size: 16px;
+    }
+    footer label {font-size: 16px;}
+    footer h2 {font-size: 25px;}
+    footer{
+        background-color:rgb(207, 188, 159) ;
+        padding: 25px;
+}
+footer section {
+    display: flex;
+    justify-content: space-between;
+}
