@@ -4,6 +4,9 @@
     box-sizing: border-box;
 
 }
+body {
+    background-image: url(../imagenes/portada-fondo.jpg);
+}
 a {
     text-decoration: none;
     color: black;    
@@ -11,7 +14,7 @@ a {
 
 /* Fuente-Color css */
 body {font-family:'Manrope', sans-serif;
-background-color: rgb(238, 241, 188);}
+}
     h1 {color: rgb(95, 16, 95); font-weight: 900; font-style: oblique;
 text-align:center; font-size: 50px;
 }
@@ -34,8 +37,13 @@ header {
 
     h2 {color: rgb(13, 67, 67);}
 
+.button:hover {
+    border: 1px solid black;
+    background-color: rgb(105, 90, 118);
+}
+
 /* caja de nav */
-.caja1 {
+nav{
 
     width: 700px;
     height: 350px;
@@ -55,6 +63,7 @@ header {
 
 
 /* ---MAIN Y ASIDE--- */
+
 
 .index-novedades {
     display: grid;
@@ -89,7 +98,7 @@ header {
     nav ul {list-style:none;
 text-align: center;
 }
-    main h2 {text-align: center; 
+    main h2 {text-align: right; 
         font-size: xx-large;
     }
 
